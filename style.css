@@ -1,0 +1,369 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inconsolata', monospace;
+}
+.header {
+    height: 500px;
+    background-color: #cf4cffd4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2px !important;
+    overflow: hidden;
+}
+
+.header .top {
+    display: flex;
+    width: 100%;
+    justify-content: space-around !important;
+}
+
+.header .top ul {
+    display: flex;
+    align-items: center;
+}
+
+.header .top ul li {
+    margin: 0 10px;
+}
+
+.header .top ul li a {
+    text-decoration: none;
+    color: #e5c0f3;
+    font-weight: 800;
+    font-size: 20px;
+}
+.header .top ul li a:hover {
+    color: #f0ddf7;
+}
+
+.header .top .tin {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.header .top ul li {
+    display: inline;
+}
+
+.header .detail .details {
+    word-spacing: -19px;
+    line-height: 5rem;
+    font-size: 4rem;
+    color: azure;
+    max-width: 430px;
+    font-weight: bold;
+}
+
+.detail {
+    width: 80rem;
+    margin-left: 295px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.row2 {
+    position: relative;
+    top: 30px;
+    width: max-content;
+    height: 346px;
+}
+.row2::-webkit-scrollbar {
+    display: none;
+}
+
+.row2 .rotate {
+    transform: rotate(20deg) !important;
+    overflow-y: hidden;
+    border-radius: 15px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 35px;
+}
+
+.app {
+    width: 160px;
+    height: 50px;
+    background-color: rgb(32 31 31);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin-top: 0px;
+}
+.app .apple {
+    width: 30px;
+    height: 30px;
+}
+
+.play .playimg {
+    width: 30px;
+    height: 30px;
+}
+
+.play {
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 23px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.app:hover {
+    background-color: black;
+}
+
+.play:hover {
+    background-color: white;
+    color: black;
+}
+
+/* specialities section starts */
+
+.specialities {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    align-items: center;
+    height: 355px;
+}
+.child {
+    max-width: 242px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.specialities h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.child h2 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.specialities img {
+    width: 60px;
+    height: 60px;
+}
+
+/* specialities section stops */
+
+/* feedbak section starts */
+
+.feedback {
+    height: 700px;
+    background-color: #ee3ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.slide {
+    height: 200px;
+}
+
+.logos {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logos img {
+    margin-left: 40px;
+    width: 270px;
+    height: 90px;
+}
+
+/* plan section starts */
+
+.plan {
+    padding: 82px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan h1 {
+    font-size: 45px;
+    word-spacing: -9px;
+
+    font-weight: bolder;
+}
+.plan .mt {
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: -90px;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.common {
+    height: 364px;
+    width: 363px;
+    border: 1px solid #3e3a3a1f;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.common .top {
+    font-size: 35px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.03);
+    margin-top: 0px;
+}
+
+.common h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.common h2 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.common button {
+    width: 95px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    border: none;
+}
+
+.mastiff {
+    height: 400px;
+}
+.spec {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+.spec:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+/* plan section ends */
+
+/* demo setion starts */
+
+.demo {
+    height: 340px;
+    background-color: #d76aff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    justify-content: space-around;
+}
+.demo h1 {
+    max-width: 772px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    word-spacing: -8px;
+}
+/* demo sections ends */
+
+/* footer section  starts */
+
+.demo .buttons {
+    margin-top: -70px;
+}
+
+.footer {
+    background-color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 75px;
+}
+
+.footer .social {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .social img {
+    width: 30px;
+    height: 30px;
+}
+.footer h1 {
+    word-spacing: -3px;
+
+    font-size: medium;
+    font-weight: normal;
+}
+
+.footer a {
+    font-weight: 500;
+    word-spacing: -5px;
+    display: inline;
+    color: blue;
+    text-decoration: none;
+}
+.owner {
+    margin-top: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.more {
+    word-spacing: 3px !important;
+}
