@@ -17,38 +17,38 @@
         <div class="top">
             <a class="tin" href="#">TinDog </a>
             <ul>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Download</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#download">Download</a></li>
             </ul>
         </div>
 
-       
-            <div class="detail">
-                <div class="row1">
-                    <h1 class="details">
-                        Meet new and intresting dogs nearby.
-                    </h1>
-                    <div class="buttons">
-                        <button class="app">
-                            <img class="apple" src="images/apple.png" alt="apple" />
-                            Download
-                        </button>
-                        <button class="play">
-                            <img class="playimg" src="images/play.png" alt="apple" />
-                            Download
-                        </button>
-                    </div>
-                </div>
 
-                <div class="row2">
-                    <img class="rotate" style="height: 425px; width: 380px;" src="images/dog.jpg">
+        <div class="detail">
+            <div class="row1">
+                <h1 class="details">
+                    Meet new and intresting dogs nearby.
+                </h1>
+                <div class="buttons">
+                    <button class="app">
+                        <img class="apple" src="images/apple.png" alt="apple" />
+                        Download
+                    </button>
+                    <button class="play">
+                        <img class="playimg" src="images/play.png" alt="apple" />
+                        Download
+                    </button>
                 </div>
-                
-
-                <img>
             </div>
-       
+
+            <div class="row2">
+                <img class="rotate" style="height: 425px; width: 380px;" src="images/dog.jpg">
+            </div>
+
+
+            <img>
+        </div>
+
     </div>
 
     <section class="specialities">
@@ -71,7 +71,35 @@
     </section>
 
     <section class="feedback">
-        <div class="slide"></div>
+
+        <div class="container">
+
+            <div class="slide" id="slide1">
+                <a onclick="slide()" href="#slide2"><img class="left" src="images/left.png"></a>
+                <div id ="slide1con"class="contents">
+                    <h1>"My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I
+                        think."</h1>
+                        <img src="images/als.jpg">
+                        <span>Pebbles, New York</span>
+                </div>
+                <a onclick='slide()' href="#slide2"><img class="right" src="images/left.png"></a>
+
+            </div>
+            <div class="slide" id="slide2">
+                <a onclick="slide()"  href="#slide1"><img class="left" src="images/left.png"></a>
+                <div class="contents">
+                    <h1>"I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof!"
+                    </h1>
+                    <img  src="images/cute.jpg">
+                    <span>Beverly, Illinois</span>
+
+                </div>
+                <a onclick="slide()" href="#slide1"><img class="right" src="images/left.png"></a>
+
+            </div>
+
+        </div>
+
 
         <div class="logos">
             <img style="height: 40px" src="images/tech.png" alt="tech" />
@@ -81,7 +109,7 @@
         </div>
     </section>
 
-    <div class="plan">
+    <div id="pricing"class="plan">
         <h1>A Plan for Every Dog's Needs</h1>
         <h2 class="mt">
             Simple and affordable price plans for your and your dog.
@@ -116,7 +144,7 @@
         </div>
     </div>
 
-    <div class="demo">
+    <div id="download"class="demo">
         <h1>Find the True Love of Your Dog's Life Today!</h1>
         <div class="buttons">
             <button class="app">
@@ -132,7 +160,7 @@
     </div>
     </div>
 
-    <section class="footer">
+    <section id="contact"class="footer">
         <div class="social">
             <img src="images/twitter.png">
             <img src="images/facebook.png">
@@ -141,13 +169,26 @@
         </div>
         <div class="owner">
             <h1>© Copyright 2021 TinDog</h1>
-            <h1 class="more"> Made with ❤ by <span> <a href="https://github.com/ronyjoseph007">Rony joseph</a></span> </h1>
+            <h1 class="more"> Made with ❤ by <span> <a href="https://github.com/ronyjoseph007">Rony joseph</a></span>
+            </h1>
 
         </div>
 
 
 
     </section>
+
+    <script>
+        function slide(){
+           
+            console.log("jiooo");
+            document.getElementById('slide1con').style.transition='4s'
+            
+
+
+        }
+    </script>
 </body>
+
 
 </html>
